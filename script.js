@@ -35,7 +35,7 @@ function moveFish() {
         }
       });
       // if there is a nearby food element, move towards it smoothly
-      if (nearestFood && nearestDistance < 200) {
+      if (nearestFood && nearestDistance < 2000) {
         let dx = parseFloat(nearestFood.style.left) - parseFloat(fishElement.style.left);
         let dy = parseFloat(nearestFood.style.top) - parseFloat(fishElement.style.top);
         let distance = Math.sqrt(dx * dx + dy * dy);
